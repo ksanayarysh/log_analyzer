@@ -1,0 +1,142 @@
+[2019.11.10 14:31:24] E No such directory lll
+[2019.11.10 14:31:46] I no files to parse
+[2019.11.10 14:52:20] I got last file
+[2019.11.10 14:52:20] I we've got log file named /home/ksenia/PycharmProjects/lesson1/log/nginx-access-ui.log-20190630
+[2019.11.10 14:52:20] I log parsed
+[2019.11.10 14:52:38] I got last file
+[2019.11.10 14:52:38] I we've got log file named /home/ksenia/PycharmProjects/lesson1/log/nginx-access-ui.log-20190630
+[2019.11.10 14:52:38] I log parsed
+[2019.11.10 14:52:38] I parsing log /home/ksenia/PycharmProjects/lesson1/log/nginx-access-ui.log-20190630 started
+[2019.11.10 14:53:16] I report file name /home/ksenia/PycharmProjects/lesson1/log/report20190630.html
+[2019.11.10 14:57:06] I got last file
+[2019.11.10 14:57:06] I we've got log file named /home/ksenia/PycharmProjects/lesson1/log/nginx-access-ui.log-20190630
+[2019.11.10 14:57:06] I log parsed
+[2019.11.10 14:57:06] I parsing log /home/ksenia/PycharmProjects/lesson1/log/nginx-access-ui.log-20190630 started
+[2019.11.10 14:57:44] I report file name /home/ksenia/PycharmProjects/lesson1/log/report20190630.html
+[2019.11.10 15:01:21] I got last file
+[2019.11.10 15:01:21] I we've got log file named /home/ksenia/PycharmProjects/lesson1/log/nginx-access-ui.log-20190630
+[2019.11.10 15:01:21] I log parsed
+[2019.11.10 15:01:21] I parsing log /home/ksenia/PycharmProjects/lesson1/log/nginx-access-ui.log-20190630 started
+[2019.11.10 15:01:55] I report file name /home/ksenia/PycharmProjects/lesson1/log/report20190630.html
+[2019.11.10 18:05:50] I got last file
+[2019.11.10 18:05:50] I we've got log file named /home/ksenia/PycharmProjects/lesson1/log/nginx-access-ui.log-20190630
+[2019.11.10 18:05:50] I log parsed
+[2019.11.10 18:05:50] I parsing log /home/ksenia/PycharmProjects/lesson1/log/nginx-access-ui.log-20190630 started
+[2019.11.10 18:06:35] I report file name /home/ksenia/PycharmProjects/lesson1/log/report20190630.html
+[2019.11.10 18:28:03] I got last file
+[2019.11.10 18:28:03] I we've got log file named /home/ksenia/PycharmProjects/lesson1/log/nginx-access-ui.log-20190630
+[2019.11.10 18:28:21] I got last file
+[2019.11.10 18:28:21] I we've got log file named /home/ksenia/PycharmProjects/lesson1/log/nginx-access-ui.log-20190630
+[2019.11.10 18:28:21] I log parsed
+[2019.11.10 18:28:21] I parsing log /home/ksenia/PycharmProjects/lesson1/log/nginx-access-ui.log-20190630 started
+[2019.11.10 18:31:00] I got last file
+[2019.11.10 18:31:00] I we've got log file named /home/ksenia/PycharmProjects/lesson1/log/nginx-access-ui.log-20190630
+[2019.11.10 18:31:00] I log parsed
+[2019.11.10 18:31:00] I parsing log /home/ksenia/PycharmProjects/lesson1/log/nginx-access-ui.log-20190630 started
+[2019.11.10 18:31:48] I 0.000068 fails
+[2019.11.10 19:58:27] I got last file
+[2019.11.10 19:58:27] I we've got log file named /home/ksenia/PycharmProjects/lesson1/log/nginx-access-ui.log-20190630
+[2019.11.10 19:58:27] I log parsed
+[2019.11.10 19:58:27] I parsing log /home/ksenia/PycharmProjects/lesson1/log/nginx-access-ui.log-20190630 started
+[2019.11.10 19:59:17] I 0.000068 fails
+[2019.11.10 19:59:19] I report file name /home/ksenia/PycharmProjects/lesson1/log/report-20190630.html
+[2019.11.10 22:17:48] I got last file
+[2019.11.10 22:17:48] I we've got log file named /home/ksenia/PycharmProjects/lesson1/log/nginx-access-ui.log-20190630
+[2019.11.10 22:17:48] I /home/ksenia/PycharmProjects/lesson1/log/report-20190630.html already exists
+[2019.11.10 22:29:59] I got last file
+[2019.11.10 22:29:59] I we've got log file named /home/ksenia/PycharmProjects/lesson1/log/nginx-access-ui.log-20190630
+[2019.11.10 22:29:59] I log parsed
+[2019.11.10 22:29:59] I parsing log /home/ksenia/PycharmProjects/lesson1/log/nginx-access-ui.log-20190630 started
+[2019.11.10 22:30:35] I 0.000068 fails
+[2019.11.10 22:30:38] I report file name /home/ksenia/PycharmProjects/lesson1/log/report-20190630.html
+[2019.11.10 22:34:05] I got last file
+[2019.11.10 22:34:05] I we've got log file named /home/ksenia/PycharmProjects/lesson1/log/nginx-access-ui.log-20190630
+[2019.11.10 22:34:05] I log parsed
+[2019.11.10 22:34:05] I parsing log /home/ksenia/PycharmProjects/lesson1/log/nginx-access-ui.log-20190630 started
+[2019.11.10 22:34:44] I 0.000068 fails
+[2019.11.10 22:34:46] I report file name /home/ksenia/PycharmProjects/lesson1/log/report-20190630.html
+[2019.11.10 22:36:07] I got last file
+[2019.11.10 22:36:07] I we've got log file named /home/ksenia/PycharmProjects/lesson1/log/nginx-access-ui.log-20191212
+[2019.11.10 22:36:07] I log parsed
+[2019.11.10 22:36:07] I parsing log /home/ksenia/PycharmProjects/lesson1/log/nginx-access-ui.log-20191212 started
+[2019.11.10 22:36:46] I 0.000068 fails
+[2019.11.10 22:36:49] I report file name /home/ksenia/PycharmProjects/lesson1/log/report-20191212.html
+[2019.11.10 22:48:49] I got last file
+[2019.11.10 22:48:49] I we've got log file named /home/ksenia/PycharmProjects/lesson1/log/nginx-access-ui.log-20191212
+[2019.11.10 22:48:49] I log parsed
+[2019.11.10 22:48:49] I parsing log /home/ksenia/PycharmProjects/lesson1/log/nginx-access-ui.log-20191212 started
+[2019.11.10 22:48:49] I 1.000000 fails
+[2019.11.10 22:49:36] I got last file
+[2019.11.10 22:49:36] I we've got log file named /home/ksenia/PycharmProjects/lesson1/log/nginx-access-ui.log-20191212
+[2019.11.10 22:49:36] I log parsed
+[2019.11.10 22:49:36] I parsing log /home/ksenia/PycharmProjects/lesson1/log/nginx-access-ui.log-20191212 started
+[2019.11.10 22:49:36] I 0.833333 fails
+[2019.11.10 22:49:44] I got last file
+[2019.11.10 22:49:44] I we've got log file named /home/ksenia/PycharmProjects/lesson1/log/nginx-access-ui.log-20191212
+[2019.11.10 22:49:44] I log parsed
+[2019.11.10 22:49:44] I parsing log /home/ksenia/PycharmProjects/lesson1/log/nginx-access-ui.log-20191212 started
+[2019.11.10 22:49:44] I 0.833333 fails
+[2019.11.10 22:50:56] I got last file
+[2019.11.10 22:50:56] I we've got log file named /home/ksenia/PycharmProjects/lesson1/log/nginx-access-ui.log-20191212
+[2019.11.10 22:50:56] I log parsed
+[2019.11.10 22:50:56] I parsing log /home/ksenia/PycharmProjects/lesson1/log/nginx-access-ui.log-20191212 started
+[2019.11.10 22:50:56] I 0.833333 fails
+[2019.11.10 22:50:56] E can not parse file
+[2019.11.10 22:51:52] I got last file
+[2019.11.10 22:51:52] I we've got log file named /home/ksenia/PycharmProjects/lesson1/log/nginx-access-ui.log-20191212
+[2019.11.10 22:51:52] I log parsed
+[2019.11.10 22:51:52] I parsing log /home/ksenia/PycharmProjects/lesson1/log/nginx-access-ui.log-20191212 started
+[2019.11.10 22:52:57] I 83.333333 fails
+[2019.11.10 22:53:01] E can not parse file
+[2019.11.10 22:53:50] I got last file
+[2019.11.10 22:53:50] I we've got log file named /home/ksenia/PycharmProjects/lesson1/log/nginx-access-ui.log-20191212
+[2019.11.10 22:53:50] I log parsed
+[2019.11.10 22:53:50] I parsing log /home/ksenia/PycharmProjects/lesson1/log/nginx-access-ui.log-20191212 started
+[2019.11.10 22:54:17] I 83.333333 fails
+[2019.11.10 22:54:19] E can not parse file
+[2019.11.10 22:57:24] I got last file
+[2019.11.10 22:57:24] I we've got log file named /home/ksenia/PycharmProjects/lesson1/log/nginx-access-ui.log-20191212
+[2019.11.10 22:57:24] I log parsed
+[2019.11.10 22:57:24] I parsing log /home/ksenia/PycharmProjects/lesson1/log/nginx-access-ui.log-20191212 started
+[2019.11.10 22:57:24] I 83.330000 fails
+[2019.11.10 22:57:24] E can not parse file
+[2019.11.10 22:57:24] I report file name /home/ksenia/PycharmProjects/lesson1/log/report-20191212.html
+[2019.11.10 22:58:01] I got last file
+[2019.11.10 22:58:01] I we've got log file named /home/ksenia/PycharmProjects/lesson1/log/nginx-access-ui.log-20191212
+[2019.11.10 22:58:01] I log parsed
+[2019.11.10 22:58:01] I parsing log /home/ksenia/PycharmProjects/lesson1/log/nginx-access-ui.log-20191212 started
+[2019.11.10 22:58:01] I 83.330000 fails
+[2019.11.10 22:58:01] E can not parse file
+[2019.11.10 22:58:01] I report file name /home/ksenia/PycharmProjects/lesson1/log/report-20191212.html
+[2019.11.10 23:00:23] I got last file
+[2019.11.10 23:00:23] I we've got log file named /home/ksenia/PycharmProjects/lesson1/log/nginx-access-ui.log-20191212.gz
+[2019.11.10 23:00:23] I log parsed
+[2019.11.10 23:00:23] I parsing log /home/ksenia/PycharmProjects/lesson1/log/nginx-access-ui.log-20191212.gz started
+[2019.11.10 23:00:52] I got last file
+[2019.11.10 23:00:52] I we've got log file named /home/ksenia/PycharmProjects/lesson1/log/nginx-access-ui.log-20191212.gz
+[2019.11.10 23:00:52] I log parsed
+[2019.11.10 23:00:52] I parsing log /home/ksenia/PycharmProjects/lesson1/log/nginx-access-ui.log-20191212.gz started
+[2019.11.10 23:11:18] I got last file
+[2019.11.10 23:11:18] I we've got log file named /home/ksenia/PycharmProjects/lesson1/log/nginx-access-ui.log-20191212.gz
+[2019.11.10 23:11:18] I log parsed
+[2019.11.10 23:11:18] I parsing log /home/ksenia/PycharmProjects/lesson1/log/nginx-access-ui.log-20191212.gz started
+[2019.11.10 23:12:28] I 0.010000 fails
+[2019.11.10 23:12:32] I report file name /home/ksenia/PycharmProjects/lesson1/log/report-20191212.html
+[2019.11.10 23:20:23] I got last file
+[2019.11.10 23:20:23] I we've got log file named /home/ksenia/PycharmProjects/log_analyzer/log/nginx-access-ui.log-20191212.gz
+[2019.11.10 23:20:23] I log parsed
+[2019.11.10 23:20:23] I parsing log /home/ksenia/PycharmProjects/log_analyzer/log/nginx-access-ui.log-20191212.gz started
+[2019.11.10 23:21:29] I 0.010000 fails
+[2019.11.10 23:21:32] I report file name /home/ksenia/PycharmProjects/log_analyzer/rep/report-20191212.html
+[2019.11.10 23:24:35] I got last file
+[2019.11.10 23:24:35] I we've got log file named /home/ksenia/PycharmProjects/log_analyzer/log/nginx-access-ui.log-20191212.gz
+[2019.11.10 23:24:35] I log parsed
+[2019.11.10 23:24:35] I parsing log /home/ksenia/PycharmProjects/log_analyzer/log/nginx-access-ui.log-20191212.gz started
+[2019.11.10 23:25:42] I 0.010000 fails
+[2019.11.10 23:25:46] I report file name /home/ksenia/PycharmProjects/log_analyzer/rep/report-20191212.html
+[2019.11.10 23:26:29] I got last file
+[2019.11.10 23:26:29] I we've got log file named /home/ksenia/PycharmProjects/log_analyzer/log/nginx-access-ui.log-20190630
+[2019.11.10 23:26:29] I log parsed
+[2019.11.10 23:26:29] I parsing log /home/ksenia/PycharmProjects/log_analyzer/log/nginx-access-ui.log-20190630 started
+[2019.11.10 23:27:21] I 0.010000 fails
+[2019.11.10 23:27:25] I report file name /home/ksenia/PycharmProjects/log_analyzer/rep/report-20190630.html

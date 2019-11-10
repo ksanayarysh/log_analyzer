@@ -1,0 +1,137 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>rbui log analysis report</title>
+  <meta name="description" content="rbui log analysis report">
+  <style type="text/css">
+    html, body {
+      background-color: black;
+    }
+    th {
+      text-align: center;
+      color: silver;
+      font-style: bold;
+      padding: 5px;
+      cursor: pointer;
+    }
+    table {
+      width: auto;
+      border-collapse: collapse;
+      margin: 1%;
+      color: silver;
+    }
+    td {
+      text-align: right;
+      font-size: 1.1em;
+      padding: 5px;
+    }
+    .report-table-body-cell-url {
+      text-align: left;
+      width: 20%;
+    }
+    .clipped {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow:hidden !important;
+      max-width: 700px;
+      word-wrap: break-word;
+      display:inline-block;
+    }
+    .url {
+      cursor: pointer;
+      color: #729FCF;
+    }
+    .alert {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <table border="1" class="report-table">
+  <thead>
+    <tr class="report-table-header-row">
+    </tr>
+  </thead>
+  <tbody class="report-table-body">
+  </tbody>
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="jquery.tablesorter.min.js"></script> 
+  <script type="text/javascript">
+  !function($) {
+    var table = [{'url': '/api/v2/internal/html5/phantomjs/queue/?wait=1m', 'count': 2767, 'count_perc': 0.106, 'time_avg': 62.995, 'time_max': 9843.569, 'time_med': 60.073, 'time_perc': 9.043, 'time_sum': 174306.352}, {'url': '/api/v2/internal/gpmd_plan_report/queue/?wait=1m&worker=5', 'count': 1410, 'count_perc': 0.054, 'time_avg': 67.106, 'time_max': 9853.373, 'time_med': 60.124, 'time_perc': 4.909, 'time_sum': 94618.864}, {'url': '/api/v2/internal/gpmd_plan_report/queue/?wait=1m&worker=2', 'count': 1409, 'count_perc': 0.054, 'time_avg': 67.096, 'time_max': 9826.572, 'time_med': 60.125, 'time_perc': 4.905, 'time_sum': 94537.857}, {'url': '/api/v2/internal/gpmd_plan_report/queue/?wait=1m&worker=3', 'count': 1393, 'count_perc': 0.053, 'time_avg': 67.189, 'time_max': 9853.242, 'time_med': 60.125, 'time_perc': 4.856, 'time_sum': 93594.358}, {'url': '/api/v2/internal/gpmd_plan_report/queue/?wait=1m&worker=4', 'count': 1392, 'count_perc': 0.053, 'time_avg': 67.133, 'time_max': 9826.209, 'time_med': 60.124, 'time_perc': 4.848, 'time_sum': 93448.983}, {'url': '/api/v2/internal/gpmd_plan_report/queue/?wait=1m&worker=1', 'count': 1414, 'count_perc': 0.054, 'time_avg': 60.166, 'time_max': 71.291, 'time_med': 60.123, 'time_perc': 4.414, 'time_sum': 85075.406}, {'url': '/export/ivi/200010-impression.csv', 'count': 1320, 'count_perc': 0.051, 'time_avg': 16.63, 'time_max': 24.053, 'time_med': 16.483, 'time_perc': 1.139, 'time_sum': 21951.65}, {'url': '/api/v2/group/7123018/banners', 'count': 784, 'count_perc': 0.03, 'time_avg': 13.071, 'time_max': 9811.46, 'time_med': 0.537, 'time_perc': 0.532, 'time_sum': 10247.771}, {'url': '/api/v2/banner/26647998', 'count': 252, 'count_perc': 0.01, 'time_avg': 40.068, 'time_max': 9811.884, 'time_med': 1.107, 'time_perc': 0.524, 'time_sum': 10097.195}, {'url': '/api/v2/banner/26619125', 'count': 252, 'count_perc': 0.01, 'time_avg': 40.052, 'time_max': 9811.885, 'time_med': 1.09, 'time_perc': 0.524, 'time_sum': 10093.061}, {'url': '/api/v2/banner/26618742', 'count': 252, 'count_perc': 0.01, 'time_avg': 40.038, 'time_max': 9811.885, 'time_med': 1.05, 'time_perc': 0.523, 'time_sum': 10089.699}, {'url': '/api/v2/banner/26598670', 'count': 252, 'count_perc': 0.01, 'time_avg': 39.972, 'time_max': 9811.885, 'time_med': 0.975, 'time_perc': 0.523, 'time_sum': 10073.002}, {'url': '/campaigns/7854376/banners/?', 'count': 699, 'count_perc': 0.027, 'time_avg': 14.405, 'time_max': 119.987, 'time_med': 13.488, 'time_perc': 0.522, 'time_sum': 10068.972}, {'url': '/api/v2/banner/24389816', 'count': 252, 'count_perc': 0.01, 'time_avg': 39.919, 'time_max': 9811.886, 'time_med': 0.887, 'time_perc': 0.522, 'time_sum': 10059.692}, {'url': '/api/v2/banner/24359968', 'count': 252, 'count_perc': 0.01, 'time_avg': 39.913, 'time_max': 9811.887, 'time_med': 0.954, 'time_perc': 0.522, 'time_sum': 10058.138}, {'url': '/api/v2/banner/26594175', 'count': 252, 'count_perc': 0.01, 'time_avg': 39.912, 'time_max': 9811.886, 'time_med': 0.919, 'time_perc': 0.522, 'time_sum': 10057.724}, {'url': '/api/v2/banner/26588410', 'count': 252, 'count_perc': 0.01, 'time_avg': 39.872, 'time_max': 9811.886, 'time_med': 0.833, 'time_perc': 0.521, 'time_sum': 10047.677}, {'url': '/api/v2/banner/26585041', 'count': 252, 'count_perc': 0.01, 'time_avg': 39.862, 'time_max': 9811.886, 'time_med': 0.908, 'time_perc': 0.521, 'time_sum': 10045.223}, {'url': '/api/v2/banner/24337272', 'count': 252, 'count_perc': 0.01, 'time_avg': 39.86, 'time_max': 9811.887, 'time_med': 0.831, 'time_perc': 0.521, 'time_sum': 10044.812}, {'url': '/campaigns/7854473/banners/?', 'count': 699, 'count_perc': 0.027, 'time_avg': 11.457, 'time_max': 25.643, 'time_med': 11.243, 'time_perc': 0.415, 'time_sum': 8008.609}, {'url': '//api/1/banners/', 'count': 48, 'count_perc': 0.002, 'time_avg': 113.199, 'time_max': 250.059, 'time_med': 105.634, 'time_perc': 0.282, 'time_sum': 5433.568}, {'url': '/api/v2/internal/slots', 'count': 236, 'count_perc': 0.009, 'time_avg': 22.635, 'time_max': 36.195, 'time_med': 23.655, 'time_perc': 0.277, 'time_sum': 5341.743}, {'url': '/campaigns/', 'count': 1294, 'count_perc': 0.05, 'time_avg': 4.062, 'time_max': 685.529, 'time_med': 1.482, 'time_perc': 0.273, 'time_sum': 5256.369}, {'url': '/api/v2/slot/2406/groups', 'count': 47, 'count_perc': 0.002, 'time_avg': 102.853, 'time_max': 128.52, 'time_med': 102.41, 'time_perc': 0.251, 'time_sum': 4834.106}, {'url': '/campaigns/7876636/banners/?', 'count': 699, 'count_perc': 0.027, 'time_avg': 6.719, 'time_max': 119.979, 'time_med': 6.191, 'time_perc': 0.244, 'time_sum': 4696.93}];
+    var reportDates;
+    var columns = new Array();
+    var lastRow = 150;
+    var $table = $(".report-table-body");
+    var $header = $(".report-table-header-row");
+    var $selector = $(".report-date-selector");
+
+    $(document).ready(function() {
+      $(window).bind("scroll", bindScroll);
+        var row = table[0];
+        for (k in row) {
+          columns.push(k);
+        }
+        columns = columns.sort();
+        columns = columns.slice(columns.length -1, columns.length).concat(columns.slice(0, columns.length -1));
+        drawColumns();
+        drawRows(table.slice(0, lastRow));
+        $(".report-table").tablesorter(); 
+    });
+
+    function drawColumns() {
+      for (var i = 0; i < columns.length; i++) {
+        var $th = $("<th></th>").text(columns[i])
+                                .addClass("report-table-header-cell")
+        $header.append($th);
+      }
+    }
+
+    function drawRows(rows) {
+      for (var i = 0; i < rows.length; i++) {
+        var row = rows[i];
+        var $row = $("<tr></tr>").addClass("report-table-body-row");
+        for (var j = 0; j < columns.length; j++) {
+          var columnName = columns[j];
+          var $cell = $("<td></td>").addClass("report-table-body-cell");
+          if (columnName == "url") {
+            var url = "https://rb.mail.ru" + row[columnName];
+            var $link = $("<a></a>").attr("href", url)
+                                    .attr("title", url)
+                                    .attr("target", "_blank")
+                                    .addClass("clipped")
+                                    .addClass("url")
+                                    .text(row[columnName]);
+            $cell.addClass("report-table-body-cell-url");
+            $cell.append($link);
+          }
+          else {
+            $cell.text(row[columnName]);
+            if (columnName == "time_avg" && row[columnName] > 0.9) {
+              $cell.addClass("alert");
+            }
+          }
+          $row.append($cell);
+        }
+        $table.append($row);
+      }
+      $(".report-table").trigger("update"); 
+    }
+
+    function bindScroll() {
+      if($(window).scrollTop() == $(document).height() - $(window).height()) {
+        if (lastRow < 1000) {
+          drawRows(table.slice(lastRow, lastRow + 50));
+          lastRow += 50;
+        }
+      }
+    }
+
+  }(window.jQuery)
+  </script>
+</body>
+</html>
