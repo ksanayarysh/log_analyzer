@@ -2,15 +2,15 @@
 import os
 import sys
 import unittest
-from _decimal import Decimal
 
 from get_config import get_conf
 from log_analyzer import get_last_file, gen_parse_log
-from parser import create_parser, get_mistakes_count, get_config_name
+from parser import get_max_fails, get_config_name
 
 
 class TestLog(unittest.TestCase):
     """tests for log analyzer"""
+
     def test_last_file(self):
         """test that last file info is getting correctly
         no files with another ext
@@ -28,7 +28,7 @@ class TestLog(unittest.TestCase):
             sys.exit(1)
         log = get_last_file(conf["LOG_DIR"])
         if log:
-            gen_parsed_log = gen_parse_log(log)
+            gen_parsed_log = gen_parse_log(log, 80)
             result_list = []
             for _ in range(int(conf['REPORT_SIZE'])):
                 result_list.append(next(gen_parsed_log))
@@ -56,7 +56,7 @@ class TestLog(unittest.TestCase):
 
     def test_mistakes_count(self):
         """check getting cl arguments"""
-        mk = get_mistakes_count()
+        mk = get_max_fails()
         self.assertEqual(mk, 50)
 
     def test_config_name(self):
@@ -64,3 +64,14 @@ class TestLog(unittest.TestCase):
         cn = get_config_name()
         self.assertEqual(cn, "config.ini")
 
+    def test_calc(self):
+        """check optimized calc"""
+        conf = get_conf(get_config_name())
+        if not conf:
+            sys.exit(1)
+        log = get_last_file(conf["LOG_DIR"])
+        if log:
+            gen_parsed_log = gen_parse_log(log, 80)
+            result_list = []
+            for _ in range(int(conf['REPORT_SIZE'])):
+                print(next(gen_parsed_log))

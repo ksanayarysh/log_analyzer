@@ -2,6 +2,8 @@
 import configparser
 import logging
 import os
+import sys
+import traceback
 
 
 def get_conf(config_file_name):
@@ -12,14 +14,16 @@ def get_conf(config_file_name):
     if we can not parse config file return None
     """
     if not os.path.exists(config_file_name):
-        logging.error("No such file")
+        logging.error("No such file %s", config_file_name)
         return None
 
     default_config = {
         "REPORT_SIZE": 1000,
         "REPORT_DIR": "reports",
         "LOG_DIR": "log",
-        "LOGGING_FILE_NAME": None
+        "LOGGING_FILE_NAME": None,
+        "TEMPLATE_FILE": "log/report.html",
+        "PERCENT_FAILS": 50
     }
     try:
         file_config = configparser.ConfigParser()
@@ -42,14 +46,18 @@ def get_conf(config_file_name):
         except KeyError:
             config['LOGGING_FILE_NAME'] = default_config['LOGGING_FILE_NAME']
         try:
-            config['SAMPLE_FILE'] = file_config['config']['SAMPLE_FILE']
+            config['TEMPLATE_FILE'] = file_config['config']['TEMPLATE_FILE']
         except KeyError:
-            config['SAMPLE_FILE'] = default_config['SAMPLE_FILE']
+            config['TEMPLATE_FILE'] = default_config['TEMPLATE_FILE']
         try:
             config['PERCENT_FAILS'] = file_config['config']['PERCENT_FAILS']
         except KeyError:
             config['PERCENT_FAILS'] = default_config['PERCENT_FAILS']
         return config
-    except:
-        logging.error("Can not parse config file")
+    except Exception as e:
+        logging.error("Can not parse config file %s",
+                      traceback.format_exception(sys.exc_info()[0],
+                                                 sys.exc_info()[1],
+                                                 sys.exc_info()[2], )
+                      )
         return None

@@ -9,7 +9,7 @@ def create_parser():
     return parser
 
 
-def get_mistakes_count():
+def get_max_fails():
     """getting mistakes count"""
     parser = create_parser()
     return parser.parse_args().mistakes

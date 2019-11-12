@@ -140,3 +140,29 @@
 [2019.11.10 23:26:29] I parsing log /home/ksenia/PycharmProjects/log_analyzer/log/nginx-access-ui.log-20190630 started
 [2019.11.10 23:27:21] I 0.010000 fails
 [2019.11.10 23:27:25] I report file name /home/ksenia/PycharmProjects/log_analyzer/rep/report-20190630.html
+[2019.11.12 08:10:44] I got last file
+[2019.11.12 08:10:44] I parsing log /home/ksenia/PycharmProjects/log_analyzer/log/nginx-access-ui.log-20191212.gz started
+[2019.11.12 08:11:34] I 0.010000 fails
+[2019.11.12 08:18:39] I got last file
+[2019.11.12 08:18:39] I parsing log /home/ksenia/PycharmProjects/log_analyzer/log/nginx-access-ui.log-20190630 started
+[2019.11.12 08:20:14] I got last file
+[2019.11.12 08:20:14] I parsing log /home/ksenia/PycharmProjects/log_analyzer/log/nginx-access-ui.log-20190630 started
+[2019.11.12 08:21:23] I 0.010000 fails
+[2019.11.12 08:22:06] I got last file
+[2019.11.12 08:22:06] I parsing log /home/ksenia/PycharmProjects/log_analyzer/log/nginx-access-ui.log-20190630 started
+[2019.11.12 08:22:52] I 0.010000 fails
+[2019.11.12 08:25:32] I got last file
+[2019.11.12 08:25:32] I we've got log file named /home/ksenia/PycharmProjects/log_analyzer/log/nginx-access-ui.log-20190630
+[2019.11.12 08:25:32] I log parsed
+[2019.11.12 08:25:32] I parsing log /home/ksenia/PycharmProjects/log_analyzer/log/nginx-access-ui.log-20190630 started
+[2019.11.12 08:26:11] I 0.010000 fails
+[2019.11.12 08:26:12] I report file name /home/ksenia/PycharmProjects/log_analyzer/rep/report-20190630.html
+[2019.11.12 08:32:49] I got last file
+[2019.11.12 08:32:49] I we've got log file named /home/ksenia/PycharmProjects/log_analyzer/log/nginx-access-ui.log-20190630
+[2019.11.12 08:32:49] I /home/ksenia/PycharmProjects/log_analyzer/rep/report-20190630.html already exists
+[2019.11.12 08:33:01] I got last file
+[2019.11.12 08:33:01] I we've got log file named /home/ksenia/PycharmProjects/log_analyzer/log/nginx-access-ui.log-20190630
+[2019.11.12 08:33:01] I log parsed
+[2019.11.12 08:33:01] I parsing log /home/ksenia/PycharmProjects/log_analyzer/log/nginx-access-ui.log-20190630 started
+[2019.11.12 08:33:43] I 0.010000 fails
+[2019.11.12 08:33:45] I report file name /home/ksenia/PycharmProjects/log_analyzer/rep/report-20190630.html

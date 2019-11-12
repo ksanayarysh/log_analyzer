@@ -17,7 +17,7 @@ logging.basicConfig(level=logging.INFO,
                     format="[%(asctime)s] %(levelname).1s %(message)s",
                     datefmt="%Y.%m.%d %H:%M:%S",
                     filename=conf["LOGGING_FILE_NAME"])
-LOG_ANALYZE_LOGGER = logging.getLogger("logger_parse")
+MAIN_LOGGER = logging.getLogger("logger_parse")
 
 
 def median(input_list):
@@ -39,23 +39,26 @@ def get_last_file(log_dir):
         for file in os.listdir(log_dir):
             match = re.search(file_mask, file)
             if match:
-                file_date = match.group(1).split("-")[1].split('.')
-                if int(file_date[0]) > last_date:
-                    last_date = int(file_date[0])
-                    try:
-                        last_ext = match.group(1).split('.')[1]
-                    except:
-                        last_ext = ''
-                    last_filename = match.group(0)
+                try:
+                    file_date = match.group(1).split("-")[1].split('.')
+                    if int(file_date[0]) > last_date:
+                        last_date = int(file_date[0])
+                        try:
+                            last_ext = match.group(1).split('.')[1]
+                        except:
+                            last_ext = ''
+                        last_filename = match.group(0)
+                except:
+                    pass
     except:
-        LOG_ANALYZE_LOGGER.error("No such directory %s", log_dir)
+        MAIN_LOGGER.error("No such directory %s", log_dir)
         return None
 
     if not last_filename:
-        LOG_ANALYZE_LOGGER.info("no files to parse")
+        MAIN_LOGGER.info("no files to parse")
         return None
 
-    LOG_ANALYZE_LOGGER.info("got last file")
+    MAIN_LOGGER.info("got last file")
     return FileInfo(os.path.join(os.path.dirname(__file__), log_dir, last_filename),
                     str(last_date), last_ext)
 
@@ -89,10 +92,10 @@ def gen_parse_log(file_info, fails_percent):
         else:
             fails += 1
 
-    LOG_ANALYZE_LOGGER.info("%f fails", round(fails / count * 100, 2))
+    MAIN_LOGGER.info("%f fails", round(fails / count * 100, 2))
 
     if (fails / count * 100) > float(fails_percent):
-        LOG_ANALYZE_LOGGER.error("can not parse file")
+        MAIN_LOGGER.error("can not parse file")
         return None
 
     log_file.close()
@@ -102,17 +105,21 @@ def gen_parse_log(file_info, fails_percent):
         res_list.append(
             {"url": url,
              "count": len(entries),
-             "count_perc": round(float(len(entries)) / float(count) * 100, 3),
-             "time_avg": round(float(sum(entries)) / len(entries), 3),
-             "time_max": round(max(entries), 3),
-             "time_med": round(median(entries), 3),
-             "time_perc": round(float(sum(entries)) / float(all_time) * 100, 3),
+             "entries": entries,
              "time_sum": round(sum(entries), 3),
              }
         )
 
     sorted_res = list(sorted(res_list, key=lambda string: string["time_sum"], reverse=True))
     for log_line in sorted_res:
+        len_line = len(log_line['entries'])
+        sum_line = sum(log_line['entries'])
+        log_line["count_perc"] = round(float(len_line) / float(count) * 100, 3)
+        log_line["time_avg"] = round(float(sum_line) / float(len_line), 3)
+        log_line["time_max"] = round(max(log_line['entries']), 3)
+        log_line["time_med"] = round(median(log_line['entries']), 3)
+        log_line["time_perc"] = round(float(sum_line) / float(all_time) * 100, 3)
+        del log_line['entries']
         yield log_line
 
 
@@ -136,26 +143,26 @@ def main():
     if not config_file:
         sys.exit(1)
     log = get_last_file(config_file["LOG_DIR"])
-    LOG_ANALYZE_LOGGER.info("we've got log file named %s", log.path)
+    MAIN_LOGGER.info("we've got log file named %s", log.path)
     file_name = os.path.join(os.path.dirname(__file__), config_file['REPORT_DIR'],
                              "report-{}.html".format(log.date))
     if os.path.exists(file_name):
-        LOG_ANALYZE_LOGGER.info("%s already exists", file_name)
+        MAIN_LOGGER.info("%s already exists", file_name)
         sys.exit()
     res = gen_parse_log(log, config_file['PERCENT_FAILS'])
     if not res:
         sys.exit(1)
-    LOG_ANALYZE_LOGGER.info("log parsed")
+    MAIN_LOGGER.info("log parsed")
     report = []
     for _ in range(int(config_file["REPORT_SIZE"])):
         try:
             report.append(next(res))
         except StopIteration:
             pass
-    LOG_ANALYZE_LOGGER.info("report file name %s", file_name)
+    MAIN_LOGGER.info("report file name %s", file_name)
 
     if report:
-        save_report(report, config_file['SAMPLE_FILE'], file_name)
+        save_report(report, config_file['TEMPLATE_FILE'], file_name)
 
 
 if __name__ == "__main__":
